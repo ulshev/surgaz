@@ -1,0 +1,150 @@
+/* start about styles */
+
+#about {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    
+    .in {
+        z-index: 2;
+        padding-bottom: 1px;
+        background: url(images/flag.jpg) no-repeat scroll 20px bottom;
+        background-size: 393/1000*100% auto;
+    }
+    
+    h3, .h3 {
+        margin-bottom: 15px;
+    }
+    h1, .h1 {
+        margin-bottom: 30px;
+    }
+}
+
+#advantages {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-bottom: 352px;
+    margin-top: -5px;
+    
+    .advantages_wrap {
+        padding-bottom: 10px;
+    }
+    
+    .advantage {
+        background: url(images/cogwheels1.png) no-repeat scroll left top;
+        padding-left: 105px;
+        max-width: 230px;
+        
+        h3, .h3 {
+            margin-bottom: 5px;
+        }
+        h2, .h2 {
+            margin-bottom: 35px;
+        }
+    }
+    
+    .slick-prev {
+	left: 110px;
+        right: auto;
+	margin-right: 0px;
+        padding-right: 0;
+	background-image: url(images/arrow_prev2.png);
+	&:hover {
+	    background-image:  url(images/arrow_prev_hover.png);
+	}
+    }
+    .slick-next {
+	left: 105px;
+	background-image:  url(images/arrow_next2.png);
+	margin-left: 65px;
+        padding-left: 0;
+	&:hover {
+	    background-image:  url(images/arrow_next_hover.png);
+	}
+    }
+}
+
+#more_about {
+    margin-left: 50%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-bottom: 40px;
+    //background: url(images/rolls.png) no-repeat scroll right top;
+    
+    .rolls {
+        max-width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+/*@media screen and (max-width: 1600px) {
+    #about {
+        
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #about {
+        
+    }
+
+}*/
+@media screen and (max-width: 999px) {
+    #advantages {
+        padding-bottom: 242px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #more_about {
+        margin-left: 50%;
+        padding-left: 30px;
+        padding-bottom: 40px;
+        
+        .rolls {
+            margin-bottom: 40px;
+        }
+    }
+    #advantages {
+        padding-bottom: 172px;
+        
+        .advantage {
+            padding-left: 55px;
+            background-size: 35px auto;
+        }
+        .slick-prev, .slick-next {
+            left: 57px;
+        }
+    }
+}
+
+//@media screen and (max-width: 590px) {
+//    
+//}
+
+@media screen and (max-width: 450px) {
+    #about {
+        
+        .in {
+            background: none;
+        }
+    }
+    #advantages {
+        float: none;
+        width: auto;
+        padding-bottom: 30px;
+    }
+    #more_about {
+        margin-left: 0;
+        padding-left: 0px;
+        padding-bottom: 40px;
+        
+        .rolls {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+/* end about styles */

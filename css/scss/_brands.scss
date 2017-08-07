@@ -1,0 +1,304 @@
+/* start brands styles */
+
+#brands {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    
+    .in {
+        z-index: 2;
+	max-width: $max-width;
+    }
+    
+    h3, .h3, h1, .h1 {
+	float: left;
+	position: relative;
+	z-index: 5;
+	width: 180px;
+	margin-right: -180px;
+	margin-bottom: 15px;
+    }
+    
+    h1, .h1 {
+	clear: left;
+    }
+    
+    .brands_wrap {
+	position: relative;
+	//height: 1px;
+	margin-bottom: -14px;
+	
+	.brand {
+	    position: relative;
+	    top: 0;
+	    left: 50%;
+	    background: no-repeat scroll center center / 100% auto;
+	    font-weight: 900;
+	    font-size: 10px;
+	    display: table;
+	    border-radius: 105px;
+	    overflow: hidden;
+	    
+	    a {
+		display: table-cell;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		text-decoration: none;
+		vertical-align: middle;
+		padding-top: 5px;
+		color: $color_text;
+		@include transition(opacity);
+		
+		&:hover {
+		    opacity: 1;
+		}
+		
+		span {
+		    font-size: 21px;
+		}
+	    }
+	    
+	    &.hovered a {
+		opacity: 0.1;
+	    }
+	    &.hovered:hover a {
+		opacity: 1;
+	    }
+	}
+	
+	.brand:nth-child(1) {
+	    width: 163px;
+	    height: 150px;
+	    background-image: url(images/brand1.png);
+	    margin-left: -112px;
+	    margin-top: 5px;
+	}
+	.brand:nth-child(2) {
+	    width: 210px;
+	    height: 210px;
+	    background-image: url(images/brand2.png);
+	    margin-left: -225px;
+	    margin-top: -20px;
+	}
+	.brand:nth-child(3) {
+	    width: 163px;
+	    height: 165px;
+	    background-image: url(images/brand3.png);
+	    margin-left: -61px;
+	    margin-top: -75px;
+	}
+	.brand:nth-child(4) {
+	    width: 210px;
+	    height: 209px;
+	    background-image: url(images/brand4.png);
+	    margin-left: 42px;
+	    margin-top: -316px;
+	}
+	.brand:nth-child(5) {
+	    width: 207px;
+	    height: 208px;
+	    background-image: url(images/brand5.png);
+	    margin-left: -372px;
+	    margin-top: -52px;
+	}
+	.brand:nth-child(6) {
+	    width: 155px;
+	    height: 157px;
+	    background-image: url(images/brand6.png);
+	    margin-left: -480px;
+	    margin-top: -297px;
+	}
+	.brand:nth-child(7) {
+	    width: 133px;
+	    height: 137px;
+	    background-image: url(images/brand7.png);
+	    margin-left: 292px;
+	    margin-top: -256px;
+	}
+	.brand:nth-child(8) {
+	    width: 184px;
+	    height: 186px;
+	    background-image: url(images/brand8.png);
+	    margin-left: 296px;
+	    margin-top: -10px;
+	}
+	.brand:nth-child(9) {
+	    width: 171px;
+	    height: 171px;
+	    background-image: url(images/brand9.png);
+	    margin-left: 146px;
+	    margin-top: -99px;
+	}
+	.brand:nth-child(10) {
+	    width: 143px;
+	    height: 144px;
+	    background-image: url(images/brand10.png);
+	    margin-left: -199px;
+	    margin-top: -72px;
+	}
+    }
+    
+    
+}
+
+@media screen and (max-width: 999px) {
+    #brands {
+	//background: url(images/brands.png) center 40px no-repeat;
+        .brands_wrap {
+	    .brand {
+		a {
+		    padding-top: 0;
+		    
+		    span {
+			font-size: 18px;
+		    }
+		}
+	    }
+	    
+	    .brand:nth-child(1) {
+		width: 130px;
+		height: 120px;
+		margin-left: -89px;
+		margin-top: 3px;
+	    }
+	    .brand:nth-child(2) {
+		width: 168px;
+		height: 168px;
+		margin-left: -180px;
+		margin-top: -15px;
+	    }
+	    .brand:nth-child(3) {
+		width: 130px;
+		height: 130px;
+		margin-left: -50px;
+		margin-top: -61px;
+	    }
+	    .brand:nth-child(4) {
+		width: 168px;
+		height: 168px;
+		margin-left: 33px;
+		margin-top: -250px;
+	    }
+	    .brand:nth-child(5) {
+		width: 166px;
+		height: 166px;
+		margin-left: -297px;
+		margin-top: -43px;
+	    }
+	    .brand:nth-child(6) {
+		width: 124px;
+		height: 124px;
+		margin-left: -385px;
+		margin-top: -237px;
+	    }
+	    .brand:nth-child(7) {
+		width: 106px;
+		height: 106px;
+		margin-left: 233px;
+		margin-top: -204px;
+	    }
+	    .brand:nth-child(8) {
+		width: 147px;
+		height: 147px;
+		margin-left: 237px;
+		margin-top: -4px;
+	    }
+	    .brand:nth-child(9) {
+		width: 136px;
+		height: 136px;
+		margin-left: 117px;
+		margin-top: -78px;
+	    }
+	    .brand:nth-child(10) {
+		width: 114px;
+		height: 114px;
+		margin-left: -160px;
+		margin-top: -56px;
+	    }
+	}
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    #brands {
+        .brands_wrap {
+	    
+	    .brand:nth-child(6) {
+		margin-left: -109px;
+		margin-top: -57px;
+	    }
+	    .brand:nth-child(7) {
+		margin-left: 138px;
+		margin-top: -209px;
+	    }
+	    .brand:nth-child(8) {
+		margin-left: 102px;
+		margin-top: 4px;
+	    }
+	    .brand:nth-child(9) {
+		margin-left: -40px;
+		margin-top: -78px;
+	    }
+	    .brand:nth-child(10) {
+		width: 114px;
+		height: 114px;
+		margin-left: -152px;
+		margin-top: -88px;
+	    }
+	}
+    }
+}
+
+@media screen and (max-width: 590px) {
+    #brands {
+        .brands_wrap {
+	    clear: left;
+	    .brand {
+		display: inline-block;
+		vertical-align: top;
+		width: 45%;
+		top: 0;
+		left: 0;
+		margin: 0 0 30px;
+		background: url(images/cogwheels1.png) no-repeat scroll 70% top / auto 20px;
+		border-radius: 0;
+		a {
+		    padding-top: 0;
+		    display: inline;
+		    
+		    span {
+			font-size: 18px;
+		    }
+		}
+		&.hovered a {
+		    opacity: 1;
+		    
+		    &:hover {
+			color: $color_a;
+		    }
+		    &:active {
+			text-decoration: underline;
+		    }
+		}
+	    }
+		
+	    .brand:nth-child(1), .brand:nth-child(2), .brand:nth-child(3), .brand:nth-child(4), .brand:nth-child(5), .brand:nth-child(6), .brand:nth-child(7), .brand:nth-child(8), .brand:nth-child(9), .brand:nth-child(10) {
+		width: 32%;
+		height: auto;
+		margin: 0 0 30px;
+		background-image: url(images/cogwheels1.png);
+	    }
+	    
+	    
+	}
+    }
+}
+
+@media screen and (max-width: 450px) {
+   #brands {
+        
+    }
+}
+
+/* end brands styles */

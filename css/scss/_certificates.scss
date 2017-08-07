@@ -1,0 +1,235 @@
+/* start certificates styles */
+
+#certificates, #contacts {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: $color_blue;
+    //border-bottom: 1px solid red;
+    padding-bottom: 1px;
+    
+    .in {
+        z-index: 2;
+	color: #fff;
+	padding-bottom: 1px;
+	margin-bottom: 50px;
+    }
+    
+    
+    
+    h1, .h1 {
+	margin-bottom: 17px;
+    }
+    
+    .left {
+	float: left;
+	width: 205px;
+	padding-bottom: 35px;
+	
+	.button {
+	    position: absolute;
+	    bottom: 0;
+	    left: 20px;
+	}
+    }
+    
+}
+
+#contacts {
+    padding-top: 27px; //??
+    //padding-bottom: 10px;
+    
+    .left {
+	.button {
+	    bottom: 10px;
+	}
+    }
+}
+
+.main_section .certificates_wrap, .main_section .filials_wrap {
+    margin-left: 318px;
+    
+    .slick-list {
+	margin-right: 150px;
+    }
+    
+    .slick-prev {
+	left: auto;
+        right: 0;
+	bottom: 10px;
+	margin-right: 60px;
+        padding-right: 0;
+    }
+    .slick-next {
+	left: auto;
+	right: 0;
+	bottom: 10px;
+	margin-left: 0;
+        padding-left: 0;
+    }
+    
+    a {
+	color: #fff;
+	text-decoration: none;
+	
+	&:hover {
+	    color: $color_a;
+	}
+	&:active {
+	    text-decoration: underline;
+	}
+    }
+}
+
+.certificates_wrap {
+    .slick-prev, .slick-next {
+	bottom: auto;
+	top: 146px;
+    }
+    
+    .certificate {
+	position: relative;
+	padding-top: 45px;
+	text-align: center;
+	
+	
+	.cert {
+	    box-sizing: border-box;
+	    border: 5px solid $color_a;
+	    width: 122px;
+	    height: 122px;
+	    display: block;
+	    margin-bottom: 21px;
+	    position: relative;
+	    
+	    &:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		width: 165px;
+		height: 210px;
+		top: -63px;
+		left: -5px;
+		background: url(images/cert_shadow.png) no-repeat scroll top left;
+	    }
+	    
+	    img {
+		margin: -45px 0 0 11px;
+		position: relative;
+		z-index: 2;
+	    }
+	}
+	.up_c, .country {
+	    display: block;
+	    width: 122px;
+	}
+	.country {
+	    color: $color_a;
+	}
+    }
+}
+
+.main_section .filials_wrap {
+    margin-left: 250px;
+    padding-top: 2px;
+
+}
+    .filial {
+	padding-left: 65px;
+	
+	.h4 {
+	    padding-left: 46px;
+	    letter-spacing: 1px;
+	    padding-top: 7px;
+	    margin-bottom: 37px;
+	    color: $color_a;
+	    background: url(images/icon_filial.png) no-repeat scroll left top;
+	}
+	
+	.cont {
+	    background:  no-repeat scroll left top;
+	    padding-left: 46px;
+	    margin-bottom: 19px;
+	    min-height: 23px;
+	    
+	    &:last-child {
+		margin-bottom: 0;
+	    }
+	}
+    }
+
+
+/*@media screen and (max-width: 1600px) {
+    #certificates {
+        
+        
+    }
+}
+
+@media screen and (max-width: 1300px){
+    #certificates {
+        
+        
+    }
+    
+}*/
+@media screen and (max-width: 999px) {
+    
+    .main_section .certificates_wrap, .main_section .filials_wrap {
+	margin-left: 238px;
+	
+	.slick-list {
+	    margin-right: 100px;
+	}
+    }
+    
+    .filial {
+	padding-left: 5px;
+	
+	.cont, .h4 {
+	    padding-left: 35px;
+	    margin-bottom: 15px;
+	}
+    }
+}
+@media screen and (max-width: 800px) {
+    #contacts {
+	padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #certificates, #contacts {
+	.left {
+	    float: none;
+	    width: auto;
+	    padding-bottom: 35px;
+	    
+	    .button {
+		position: relative;
+		bottom: auto;
+		left: auto;
+	    }
+	}
+    }
+    
+    #contacts {
+	.in {     
+	    padding-top: 10px;
+	}
+    }
+    
+    .certificates_wrap, .filials_wrap {
+	margin-left: 0;
+	
+	.slick-list {
+	    margin-right: 0px;
+	}
+    }
+}
+
+@media screen and (max-width: 450px) {
+   
+}
+
+/* end certificates styles */

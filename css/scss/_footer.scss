@@ -1,0 +1,146 @@
+/* start footer styles */
+
+#pre_foo {
+    display: table-row;
+    height: 100%;
+}
+
+#index {
+    footer {
+        display: block;
+    }
+}
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    display: table-row;
+    
+    .in { 
+        font-size: 11px;
+        line-height: 145%;
+    }
+    
+    a {
+	text-decoration: none;
+    }
+    
+    #copy {
+        float: left;
+	width: 230/960*100%;
+	margin-right: 85/960*100%;
+	padding-top: 6px;
+    }
+    
+    #address {
+	float: left;
+	width: 170/960*100%;
+	margin-right: 67/960*100%;
+	padding-left: 40px;
+	padding-top: 6px;
+	letter-spacing: 0.6px;
+	background: url(images/icon_address2.png) no-repeat scroll left 2px;
+    }
+    #call {
+	float: left;
+	width: 115/960*100%;
+	margin-right: 40/960*100%;
+	padding-left: 38px;
+	padding-top: 6px;
+	letter-spacing: 0.6px;
+	background: url(images/icon_call2.png) no-repeat scroll left 2px;
+    }
+    
+    .social {
+	padding-top: 6px;
+	p {
+	    margin-bottom: 9px;
+	    letter-spacing: 0.6px;
+	}
+	a {
+	    margin-left: 12px
+	}
+    }
+}
+
+@media screen and (max-width: 999px) {
+    footer {
+	.in {
+	    padding: 40px 20px;
+	}
+	#copy {
+	    width: 280/960*100%;
+	    margin-right: 45/960*100%;
+	}
+	
+	#address {
+	    width: 190/960*100%;
+	    margin-right: 37/960*100%;
+	    padding-left: 30px;
+	    box-sizing: border-box;
+	}
+	#call {
+	    width: 195/960*100%;
+	    margin-right: 10/960*100%;
+	    padding-left: 30px;
+	    box-sizing: border-box;
+	}
+    }
+}
+@media screen and (max-width: 800px) {
+    footer {
+	.in {
+	    padding: 30px 20px;
+	}
+	#copy {
+	    width: 45%;
+	    margin-right: 0;
+	    margin-bottom: 20px;
+	}
+	
+	#address {
+	    width: 40%;
+	    margin-right: 0;
+	    float: right;
+	    margin-bottom: 20px;
+	}
+	#call {
+	    width: 40%;
+	    margin-right: 0;
+	    clear: both;
+	    float: right;
+	}
+	
+	.social {
+	    width: 45%;
+	    margin-right: 0;
+	    float: left;
+	    text-align: left;
+	}
+    }
+}
+@media screen and (max-width: 590px) {
+    footer {
+        
+    }
+}
+@media screen and (max-width: 450px) {
+    footer {
+	.in {
+	    padding: 20px 20px;
+	}
+	#copy, #address, #call {
+	    width: auto;
+	    float: none;
+	    margin-bottom: 10px;
+	}
+	
+	.social {
+	    width: auto;
+	    float: none;
+	}
+    }
+}
+
+/* end footer styles */
