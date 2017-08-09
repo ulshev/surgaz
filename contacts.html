@@ -32,7 +32,7 @@
 		</div>
 		
 		<div id="logo">
-			<a href="#">Обойная компания</a>
+			<a href="index.html">Обойная компания</a>
 		</div>
 		
 		<div id="language">
@@ -47,7 +47,7 @@
 			<span class="menu_button">Меню</span>
 			<ul class="main_menu">
 				<li>
-					<a href="#" title="Главная">Главная</a>
+					<a href="index.html" title="Главная">Главная</a>
 				</li>
 				<li>
 					<a href="new_items.html" title="Новинки">Новинки</a>
@@ -108,7 +108,7 @@
 			</div>
 		</div>
 		
-		<h1>Контакты</h1>
+		<div class="h1">Филиалы</div>
 		<div class="filials_wrap">
 			<div class="filial">
 				<div class="h4">САНКТ-ПЕТЕРБУРГ</div>
@@ -152,7 +152,7 @@
 		</div>
 		
 		<div class="feedback">
-			<div class="left">
+			<div style="background-image: url('images/icon_feedback.png')" class="info_block">
 				<div class="h4">обратная связь</div>
 				<p>вы можете оставить
 свое сообщение 
@@ -161,6 +161,35 @@
 по&nbsp;указанному 
 электронному адресу
 в&nbsp;ближайшее время</p>
+			</div>
+			
+			<div id="feedback_form">
+				<div class="form_block">
+					<div class="letter"></div>
+					<div class="paper">
+						<p class="attention">Все поля в форме связи обязательны к заполнению</p>
+						<form>
+							<label for="name">Имя</label>
+							<input type="text" name="name" value="" >
+							<label for="email">E-mail</label>
+							<input type="text" name="email" value="" >
+							<label for="email">Ваше сообщение</label>
+							<textarea name="message" value=""></textarea>
+							<div class="captcha">
+								<label for="code">Введите код</label>
+								<span class="img"><img src="images/captcha.png" alt=""></span>
+								<input type="text" name="code" value="" >
+							</div>
+							<div class="button_block">                                                <input type="submit" class="button" value="отправить">
+							</div>
+							
+						</form>
+					</div>
+				</div>
+				
+				<div class="sended_block" style="display: none;">
+					
+				</div>
 			</div>
 			
 		</div>

@@ -276,9 +276,10 @@ a.button:active {
 
 .text_block {
 	max-width: 420px;
-	height: 300px;
+	max-height: 300px;
 	font-size: 12px;
 	line-height: 185%;
+	text-align: justify;
 	
 	.mCSB_scrollTools {
 		width: 5px;
@@ -291,6 +292,45 @@ a.button:active {
 		background-color: $color_a;
 		padding: 0 px;
 	}
+}
+
+.info_block {
+	float: left;
+	width: 200px;
+	text-transform: uppercase;
+	margin-bottom: 55px;
+	background: no-repeat left top;
+	padding-left: 52px;
+	padding-top: 5px;
+	
+	.h4 {
+	    font-weight: 900;
+	    width: 80px;
+	    min-height: 20px;
+	}
+	p {
+	    line-height: 145%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+    .info_block {
+	width: 180px;
+	margin-bottom: 15px;
+	padding-left: 31px;
+	background-size: 23px;
+	    
+	.h4 {
+		width: auto;
+	}
+    }
+}
+@media screen and (max-width: 450px) {
+    .info_block {
+	float: none;
+	width: auto;
+	margin-bottom: 15px;
+    }
 }
 
 .up_c {

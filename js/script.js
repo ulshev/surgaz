@@ -104,6 +104,18 @@ $(document).ready(function() {
 		]
 	});
 	
+	$('.photo_slider').slick({
+		dots: false,
+		arrows: true,
+		infinite: true,
+		speed: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		prevArrow: '<span class="slick-prev"></span>',
+		nextArrow: '<span class="slick-next"></span>',
+	});
+	
 	$(".text_block").mCustomScrollbar({
 	    autoHideScrollbar: false,
 	});
