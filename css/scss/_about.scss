@@ -142,7 +142,9 @@
         padding-bottom: 40px;
         
         .rolls {
-            margin-bottom: 30px;
+            max-width: 70%;
+            display: block;
+            margin: 0 auto 30px;
         }
     }
 }

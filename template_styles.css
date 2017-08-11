@@ -1176,7 +1176,9 @@ a.button:active {
     padding-bottom: 40px;
   }
   #more_about .rolls {
-    margin-bottom: 30px;
+    max-width: 70%;
+    display: block;
+    margin: 0 auto 30px;
   }
 }
 /* end about styles */
@@ -1364,10 +1366,10 @@ a.button:active {
     padding-top: 10px;
   }
 
-  .certificates_wrap, .filials_wrap {
+  .main_section .certificates_wrap, .main_section .filials_wrap {
     margin-left: 0;
   }
-  .certificates_wrap .slick-list, .filials_wrap .slick-list {
+  .main_section .certificates_wrap .slick-list, .main_section .filials_wrap .slick-list {
     margin-right: 0px;
   }
 }
