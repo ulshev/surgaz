@@ -10,13 +10,18 @@
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	
+	<script type="text/javascript" src="modals/script.js"></script> 
+	
 	<script type="text/javascript" src="js/script.js"></script> 
 	
 	<title>SURGAZ</title>
 	<link rel="stylesheet" type="text/css"  media="all" href="css/jquery.fancybox.css" />
-	<link rel="stylesheet" type="text/css"media="all" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" media="all" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css"  media="all" href="css/jquery.mCustomScrollbar.min.css" />
 	<link rel="stylesheet" type="text/css"  media="all" href="css/font.css" />
+	
+	<link rel="stylesheet" type="text/css"  media="all" href="modals/style.css" />
 	
 	<link rel="stylesheet" type="text/css"  media="all" href="template_styles.css" />
 </head>
@@ -164,7 +169,70 @@
 			</div>
 			
 			<div id="feedback_form">
+				
 				<div class="form_block">
+					<div class="letter"></div>
+					<div class="paper">
+						<p class="attention">Все поля в форме связи обязательны к заполнению</p>
+						<div class="webFormItem" id="WEB_FORM_ITEM_SIMPLE_QUESTION_504">
+							<div class="webFormItemCaption">
+								<div class="webFormItemLabel">Имя<span class="webFormItemRequired">*</span></div>
+							</div>
+							<div class="webFormItemError"></div>
+							<div class="webFormItemField" data-required="Y">
+								<input class="inputtext" name="form_text_1" value="" size="50" type="text">
+							</div>
+						</div>
+						<div class="webFormItem" id="WEB_FORM_ITEM_SIMPLE_QUESTION_843">
+							<div class="webFormItemCaption">
+								<div class="webFormItemLabel">E-mail<span class="webFormItemRequired">*</span></div>
+							</div>
+							<div class="webFormItemError"></div>
+							<div class="webFormItemField" data-required="Y">
+								<input class="inputtext" name="form_text_2" value="" size="50" type="text">
+							</div>
+						</div>
+						<div class="webFormItem" id="WEB_FORM_ITEM_SIMPLE_QUESTION_931">
+							<div class="webFormItemCaption">
+								<div class="webFormItemLabel">Ваше сообщение<span class="webFormItemRequired">*</span></div>
+							</div>
+							<div class="webFormItemError"></div>
+							<div class="webFormItemField" data-required="Y">
+								<textarea name="form_textarea_3" cols="50" rows="4" class="inputtextarea"></textarea>
+							</div>
+						</div>
+						<div class="personalInfo">
+							<div class="webFormItem">
+								<div class="webFormItemError"></div>
+								<div class="webFormItemField" data-required="Y">
+									<input id="personalInfoFieldStatic" name="personalInfo" value="Y" type="checkbox">
+									<label for="personalInfoFieldStatic">Я согласен на <a href="/personal-info/" class="pilink">обработку персональных данных.</a><span class="webFormItemRequired">*</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="webFormItem captcha">
+							<div class="webFormItemCaption">Введите код <!--Защита от автоматического заполнения--></div>		
+							<input name="captcha_sid" value="00e585950599c7cfe7defbff541fbcb3" class="webFormCaptchaSid" type="hidden">
+							<div class="webFormCaptchaPicture">
+								<img src="/bitrix/tools/captcha.php?captcha_sid=00e585950599c7cfe7defbff541fbcb3" class="webFormCaptchaImage" height="40" width="180">
+							</div>
+							<!--div class="webFormCaptchaLabel">
+								Введите символы с картинки<font color="red"><span class="form-required starrequired">*</span></font>
+							</div-->
+							<div class="webFormItemField" data-required="Y">
+								<input name="captcha_word" size="30" maxlength="50" value="" class="captcha_word" type="text">
+							</div>
+						</div>
+						<div class="webFormError"></div>
+						<div class="button_block">
+							<input name="web_form_submit" value="Отправить" class="sendWebFormDw button" type="submit">
+							<input name="web_form_apply" value="Y" type="hidden">
+						</div>
+					</div>
+				</div>
+				
+				
+				<!--div class="form_block">
 					<div class="letter"></div>
 					<div class="paper">
 						<p class="attention">Все поля в форме связи обязательны к заполнению</p>
@@ -185,7 +253,7 @@
 							
 						</form>
 					</div>
-				</div>
+				</div-->
 				
 				<div class="sended_block" style="display: none;">
 					

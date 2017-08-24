@@ -2,16 +2,18 @@ $(window).on('load', function(){
         if ( window.innerWidth>799 ) {
 		
 		$('#brands').toggleClass("hidden");
+		$('#brands.hidden').toggleClass("animated");
+		$('#new_catalogs').toggleClass("hidden");
 		
 		var mainBodyScroll = function(event){
 			
 			var windowHeight = $(window).height();
 			var loadingElements = {
-				"#brands": {
+				/*"#brands": {
 					position: 0,
 					loaded: false,
 					interval: 100,
-				},
+				},*/
 				"#brands .social": {
 					position: 0,
 					loaded: false,
@@ -40,7 +42,7 @@ $(window).on('load', function(){
 				"#contacts": {
 					position: 0,
 					loaded: false,
-					interval: 300,
+					interval: 400,
 				},
 			};
 			

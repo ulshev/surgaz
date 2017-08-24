@@ -6,142 +6,7 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-@-webkit-keyframes bounceInLeft {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
 
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0);
-    transform: translate3d(-3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes bounceInLeft {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0);
-    transform: translate3d(-3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-
-@-webkit-keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
 
 @-webkit-keyframes fadeInUp {
   from { opacity: 0; -webkit-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0); }
@@ -195,71 +60,6 @@
   to{ opacity: 1; }
 }
 
-@-webkit-keyframes flipInX {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-@keyframes flipInX {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
   
 
 @media screen and (min-width: 800px){
@@ -273,10 +73,10 @@
 	#brands.animated .brand:nth-child(4) { -webkit-animation-delay: 1.1s;  animation-delay: 1.1s; }
 	#brands.animated .brand:nth-child(5) { -webkit-animation-delay: 1.3s;  animation-delay: 1.3s; }
 	#brands.animated .brand:nth-child(6) { -webkit-animation-delay: 1.5s;  animation-delay: 1.5s; }
-	#brands.animated .brand:nth-child(7) { -webkit-animation-delay: 1.5s;  animation-delay: 1.7s; }
-	#brands.animated .brand:nth-child(8) { -webkit-animation-delay: 1.5s;  animation-delay: 1.9s; }
-	#brands.animated .brand:nth-child(9) { -webkit-animation-delay: 1.5s;  animation-delay: 2.1s; }
-	#brands.animated .brand:nth-child(10) { -webkit-animation-delay: 1.5s;  animation-delay: 2.3s; }
+	#brands.animated .brand:nth-child(7) { -webkit-animation-delay: 1.7s;  animation-delay: 1.7s; }
+	#brands.animated .brand:nth-child(8) { -webkit-animation-delay: 1.9s;  animation-delay: 1.9s; }
+	#brands.animated .brand:nth-child(9) { -webkit-animation-delay: 2.1s;  animation-delay: 2.1s; }
+	#brands.animated .brand:nth-child(10) { -webkit-animation-delay: 2.3s;  animation-delay: 2.3s; }
   
 }
 
@@ -290,7 +90,7 @@
 	#new_catalogs.hidden  { opacity: 0; }
 	#new_catalogs.animated  { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
 	#new_catalogs.hidden .slick-list { opacity: 0; }
-	#new_catalogs.animated .slick-list { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: 0.7s; animation-duration: 0.7s; -webkit-animation-name: zoomIn; animation-name: zoomIn; -webkit-animation-delay: .9s;  animation-delay: .9s; }
+	#new_catalogs.animated .slick-list { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: 0.7s; animation-duration: 0.7s; -webkit-animation-name: zoomIn; animation-name: zoomIn; -webkit-animation-delay: .2s;  animation-delay: .2s; }
   
 }
 
@@ -306,36 +106,36 @@
 }
 
 @media screen and (min-width: 800px){
-	#certificates.hidden { opacity: 0; }
-	#certificates.animated { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
+	/*#certificates.hidden { opacity: 0; }
+	#certificates.animated { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }*/
 	#certificates.hidden .left { opacity: 0; }
 	#certificates.animated .left { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; -webkit-animation-delay: 0.7s;  animation-delay: 0.7s; }
 	#certificates.hidden .certificate { opacity: 0; }
 	#certificates.animated .certificate { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: zoomIn; animation-name: zoomIn;}
-	#certificates.animated .certificate:nth-child(1) { -webkit-animation-delay: .1s;  animation-delay: .1s; }
-	#certificates.animated .certificate:nth-child(2) { -webkit-animation-delay: .3s;  animation-delay: .3s; }
-	#certificates.animated .certificate:nth-child(3) { -webkit-animation-delay: .5s;  animation-delay: .5s; }
-	#certificates.animated .certificate:nth-child(4) { -webkit-animation-delay: .7s;  animation-delay: .7s; }
-	#certificates.animated .certificate:nth-child(5) { -webkit-animation-delay: .9s;  animation-delay: .9s; }
-	#certificates.animated .certificate:nth-child(6) { -webkit-animation-delay: 1.1s;  animation-delay: 1.1s; }
-	#certificates.animated .certificate:nth-child(7) { -webkit-animation-delay: 1.3s;  animation-delay: 1.3s; }
-	#certificates.animated .certificate:nth-child(8) { -webkit-animation-delay: 1.5s;  animation-delay: 1.5s; }
+	#certificates.animated .certificate:nth-child(1) { -webkit-animation-delay: .8s;  animation-delay: .8s; }
+	#certificates.animated .certificate:nth-child(2) { -webkit-animation-delay: 1.0s;  animation-delay: 1.0s; }
+	#certificates.animated .certificate:nth-child(3) { -webkit-animation-delay: 1.2s;  animation-delay: 1.2s; }
+	#certificates.animated .certificate:nth-child(4) { -webkit-animation-delay: 1.4s;  animation-delay: 1.4s; }
+	#certificates.animated .certificate:nth-child(5) { -webkit-animation-delay: 1.6s;  animation-delay: 1.6s; }
+	#certificates.animated .certificate:nth-child(6) { -webkit-animation-delay: 1.8s;  animation-delay: 1.8s; }
+	#certificates.animated .certificate:nth-child(7) { -webkit-animation-delay: 2.0s;  animation-delay: 2.0s; }
+	#certificates.animated .certificate:nth-child(8) { -webkit-animation-delay: 2.2s;  animation-delay: 2.2s; }
 }
 @media screen and (min-width: 800px){
-	#contacts.hidden { opacity: 0; }
-	#contacts.animated { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
+	/*#contacts.hidden { opacity: 0; }
+	#contacts.animated { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }*/
 	#contacts.hidden .left { opacity: 0; }
 	#contacts.animated .left { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; -webkit-animation-delay: 0.7s;  animation-delay: 0.7s; }
 	#contacts.hidden .filial { opacity: 0; }
 	#contacts.animated .filial { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: zoomIn; animation-name: fadeInUp;}
-	#contacts.animated .filial:nth-child(1) { -webkit-animation-delay: .1s;  animation-delay: .1s; }
-	#contacts.animated .filial:nth-child(2) { -webkit-animation-delay: .3s;  animation-delay: .3s; }
-	#contacts.animated .filial:nth-child(3) { -webkit-animation-delay: .5s;  animation-delay: .5s; }
-	#contacts.animated .filial:nth-child(4) { -webkit-animation-delay: .7s;  animation-delay: .7s; }
-	#contacts.animated .filial:nth-child(5) { -webkit-animation-delay: .9s;  animation-delay: .9s; }
-	#contacts.animated .filial:nth-child(6) { -webkit-animation-delay: 1.1s;  animation-delay: 1.1s; }
-	#contacts.animated .filial:nth-child(7) { -webkit-animation-delay: 1.3s;  animation-delay: 1.3s; }
-	#contacts.animated .filial:nth-child(8) { -webkit-animation-delay: 1.5s;  animation-delay: 1.5s; }
+	#contacts.animated .filial:nth-child(1) { -webkit-animation-delay: .8s;  animation-delay: .8s; }
+	#contacts.animated .filial:nth-child(2) { -webkit-animation-delay: 1.0s;  animation-delay: 1.0s; }
+	#contacts.animated .filial:nth-child(3) { -webkit-animation-delay: 1.2s;  animation-delay: 1.2s; }
+	#contacts.animated .filial:nth-child(4) { -webkit-animation-delay: 1.4s;  animation-delay: 1.4s; }
+	#contacts.animated .filial:nth-child(5) { -webkit-animation-delay: 1.6s;  animation-delay: 1.6s; }
+	#contacts.animated .filial:nth-child(6) { -webkit-animation-delay: 1.8s;  animation-delay: 1.8s; }
+	#contacts.animated .filial:nth-child(7) { -webkit-animation-delay: 2.0s;  animation-delay: 2.0s; }
+	#contacts.animated .filial:nth-child(8) { -webkit-animation-delay: 2.2s;  animation-delay: 2.2s; }
 }
 
 

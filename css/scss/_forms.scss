@@ -2,13 +2,23 @@
 
 .form_block {
     
-    label {
+    label, .webFormItemCaption {
 	display: block;
 	font-size: 13px;
+	line-height: 135%;
 	margin-bottom: 2px;
     }
     
-    input, textarea, select {
+    .webFormItemField input[type="checkbox"]:not(checked) + label, .webFormItemField input[type="radio"]:not(checked) + label {
+	padding-left: 28px;
+    }
+    
+    .webFormItem {
+	padding: 0 35px;
+	margin: 0;
+    }
+    
+    input[type="password"], input[type="text"], textarea, select, .webFormItemField input[type="password"], .webFormItemField input[type="text"], .webFormItemField select {
 	padding: 5px;
 	margin: 0 0 5px;
 	width: 100%;
@@ -26,21 +36,54 @@
 	box-sizing: border-box;
 	
     }
-    input, textarea, select {
+    input[type="password"], input[type="text"], textarea, select, .webFormItemField input[type="password"], .webFormItemField input[type="text"], .webFormItemField select {
 	&:focus {
-	    border-color: #d0d0d0;
+	    border: 2px solid #d0d0d0;
 	}
     }
     textarea {
-	    height: 125px;
+	    height: 85px;
 	    resize: none;
-	    margin-bottom: 20px;
+	    //margin-bottom: 20px;
     }
     
-    .captcha {
+    .webFormItemField {
+	position: relative;
+    }
+    input[type="checkbox"], .webFormItemField input[type="checkbox"] {
+	padding: 5px;
+	margin: 0 0 5px;
+	width: 21px;
+	height: 21px;
+	outline: none;
+	border: 2px solid #e3e3e3;
+	background: none;
+	font-family: $font_family_os;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 15px;
+	border-radius: 3px;
+	color: $color_text;
+        vertical-align: top;
+	box-sizing: border-box;
+	opacity: 1;
+	top: -2px;
+	left: -2px;
+	
+	position: absolute;
+	
+    }
+    input[type="checkbox"], .webFormItemField input[type="checkbox"] {
+	&:focus {
+	    border: 2px solid #d0d0d0;
+	}
+    }
+    
+    .captcha, .webFormCaptchaPicture {
 	float: right;
-	width: 133px;
+	width: 181px;
 	margin-bottom: 10px;
+	margin-top: 0;
 	
 	.img {
 	    display: block;
@@ -59,6 +102,11 @@
     .button_block {
 	clear: both;
 	text-align: right;
+	padding: 0 35px;
+	
+	&:after, &:before {
+	    display:  none;
+	}
     }
     
     input[type="submit"], input[type="reset"] {
@@ -74,7 +122,7 @@
 	    margin-bottom: 0;
 	    border-radius: 26px;
 	    @include transition(opacity);
-	    border-color: $color_a;
+	    border: 2px solid $color_a;
 	    float: none;
 	    text-transform: uppercase;
 	    opacity: 0.8;
@@ -84,6 +132,10 @@
     }
     input[type="submit"]:active, input[type="reset"]:active {
 	    color: $color_blue;
+    }
+    
+    .webFormItemRequired {
+	display: none;
     }
     
 }
@@ -128,11 +180,24 @@
 	    
 	}
     }
+    
+    .form_block .webFormItem {
+	padding: 0 30px;
+    }
 }
 
-//@media screen and (max-width: 590px) {
-//    
-//}
+@media screen and (max-width: 590px) {
+    .form_block {
+	.webFormItem {
+	    padding: 0 25px;
+	}
+	.webFormItemField input[type="checkbox"]:not(checked) + label, .webFormItemField input[type="radio"]:not(checked) + label {
+	    font-size: 11px;
+	    line-height: 135%;
+	    padding-left: 23px;
+	}
+    }
+}
 //
 //@media screen and (max-width: 450px) {
 //    
