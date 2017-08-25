@@ -42,7 +42,7 @@ $(window).on('load', function(){
 				"#contacts": {
 					position: 0,
 					loaded: false,
-					interval: 400,
+					interval: 300,
 				},
 			};
 			

@@ -1081,6 +1081,7 @@ a.button:active {
 }
 #advantages .advantages_wrap {
   padding-bottom: 10px;
+  min-height: 380px;
 }
 #advantages .advantage {
   background: url(images/cogwheels1.png) no-repeat scroll left top;
@@ -1272,6 +1273,7 @@ a.button:active {
   margin: -45px 0 0 11px;
   position: relative;
   z-index: 2;
+  height: 148px;
 }
 .certificates_wrap .certificate .up_c, .certificates_wrap .certificate .country {
   display: block;
@@ -1377,6 +1379,9 @@ a.button:active {
 .left_col nav li.active {
   font-weight: 900;
   background: url(images/cogwheels2.png) no-repeat left center;
+}
+.left_col nav li.active a {
+  color: #00aeb2;
 }
 .left_col nav li a {
   text-decoration: none;
@@ -2981,6 +2986,21 @@ footer .social a {
     animation-duration: .5s;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
+  }
+
+  #new_catalogs.hidden .left {
+    opacity: 0;
+  }
+
+  #new_catalogs.animated .left {
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
   }
 
   #new_catalogs.hidden .slick-list {

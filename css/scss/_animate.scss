@@ -89,6 +89,8 @@
 @media screen and (min-width: 800px){
 	#new_catalogs.hidden  { opacity: 0; }
 	#new_catalogs.animated  { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
+	#new_catalogs.hidden .left { opacity: 0; }
+	#new_catalogs.animated .left { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight;-webkit-animation-delay: .2s;  animation-delay: .2s; }
 	#new_catalogs.hidden .slick-list { opacity: 0; }
 	#new_catalogs.animated .slick-list { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: 0.7s; animation-duration: 0.7s; -webkit-animation-name: zoomIn; animation-name: zoomIn; -webkit-animation-delay: .2s;  animation-delay: .2s; }
   
