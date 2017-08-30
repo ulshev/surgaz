@@ -343,9 +343,9 @@ a.button:active {
 	background: url(images/to_top.png) no-repeat scroll center;
 	position:fixed;
 	z-index: 100500;
-	bottom:125px;
+	bottom: 60px;
 	left: 50%;
-	margin-left: 392px;
+	margin-left: 592px;
 	cursor:pointer;
 	display:none;
 	opacity: 0.3;
@@ -354,4 +354,17 @@ a.button:active {
 	&:hover {
 		opacity: 1;
 	}
+}
+
+@media screen and (max-width: 1370px) {
+    #to_top {
+	left: auto;
+	right: 5px;
+	margin-left: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    #to_top {
+	display: none !important;
+    }
 }
