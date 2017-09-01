@@ -113,7 +113,7 @@
 	#certificates.hidden .left { opacity: 0; }
 	#certificates.animated .left { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; -webkit-animation-delay: 0.7s;  animation-delay: 0.7s; }
 	#certificates.hidden .certificate { opacity: 0; }
-	#certificates.animated .certificate { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: zoomIn; animation-name: zoomIn;}
+	#certificates.animated .certificate { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight;}
 	#certificates.animated .certificate:nth-child(1) { -webkit-animation-delay: .8s;  animation-delay: .8s; }
 	#certificates.animated .certificate:nth-child(2) { -webkit-animation-delay: 1.0s;  animation-delay: 1.0s; }
 	#certificates.animated .certificate:nth-child(3) { -webkit-animation-delay: 1.2s;  animation-delay: 1.2s; }
@@ -129,7 +129,7 @@
 	#contacts.hidden .left { opacity: 0; }
 	#contacts.animated .left { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight; -webkit-animation-delay: 0.7s;  animation-delay: 0.7s; }
 	#contacts.hidden .filial { opacity: 0; }
-	#contacts.animated .filial { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: zoomIn; animation-name: fadeInUp;}
+	#contacts.animated .filial { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .3s; animation-duration: .3s; -webkit-animation-name: fadeInRight; animation-name: fadeInRight;}
 	#contacts.animated .filial:nth-child(1) { -webkit-animation-delay: .8s;  animation-delay: .8s; }
 	#contacts.animated .filial:nth-child(2) { -webkit-animation-delay: 1.0s;  animation-delay: 1.0s; }
 	#contacts.animated .filial:nth-child(3) { -webkit-animation-delay: 1.2s;  animation-delay: 1.2s; }

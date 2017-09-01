@@ -12,7 +12,7 @@
     width: 347/960*100%;
     max-width: 347px;
     float: left;
-    margin: 0 auto 40px;
+    margin: 0 auto -17px;
     
     .photo {
 	width: 337px;
@@ -52,7 +52,7 @@
     .slick-prev {
 	left: auto;
         right: -90px;
-	bottom: 10px;
+	bottom: 0px;
 	margin-right: 0px;
         padding-right: 0;
 	background-image: url(images/arrow_prev2.png);
@@ -63,7 +63,7 @@
     .slick-next {
 	right: -150px;
 	left: auto;
-	bottom: 10px;
+	bottom: 0px;
 	margin-left: 65px;
         padding-left: 0;
 	background-image:  url(images/arrow_next2.png);
@@ -86,7 +86,11 @@
 	font-size: 24px;
 	color: $color_a;
 	margin-bottom: 60px;
-    } 
+    }
+    
+    .social {
+	clear: left;
+    }
 }
     .info_block.characteristics {
 	width: 140px;
@@ -159,7 +163,7 @@
 		height: 130px;
 		overflow: hidden;
 		margin-top: -20px;
-		box-shadow: 19px 19px 35px rgba(110, 110, 110, 0.6);
+		box-shadow: 19px 19px 35px rgba(110, 110, 110, 0.4);
 		position: relative;
 		
 		&:after {

@@ -142,7 +142,7 @@ h3.brand_name {
 }
 
 .brand_country {
-    background: url(images/icon_brand_country.png) no-repeat left center;
+    background: url(images/icon_brand_coun.png) no-repeat left center;
     padding: 7px 0 5px 52px;
     color: $color_a;
     font-weight: 900;
@@ -252,7 +252,7 @@ h3.brand_name {
 	    }
 	    
 	    &:after {
-		content: "→";
+		content: ">";
 		display: inline-block;
 		margin-left: 10px;
 	    }
