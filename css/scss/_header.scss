@@ -49,6 +49,11 @@
 	a {
 	    text-decoration: none;
 	    color: $color_blue;
+	    @include transition(color);
+	    
+	    &:hover {
+		color: $color_a;
+	    }
 	}
     }
     

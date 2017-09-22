@@ -215,8 +215,23 @@
     }
 }
 
-//@media screen and (max-width: 450px) {
-//   
-//}
+@media screen and (max-width: 450px) {
+    .main_section .certificates_wrap, .main_section .filials_wrap {
+	padding-bottom: 50px;
+	
+	.slick-prev, .slick-next {
+	    bottom: 0;
+	    top: auto;
+	}
+	.slick-next {
+	    left: 50%;
+	    margin-left: 10px;
+	}
+	.slick-prev {
+	    margin-right: 30px;
+	    right: 50%;
+	}
+    }
+}
 
 /* end certificates styles */

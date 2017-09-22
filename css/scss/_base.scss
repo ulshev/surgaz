@@ -238,6 +238,39 @@ a.button:active {
 
 .fancybox-enabled {
     overflow: auto;
+    
+    .fancybox-button--left, .fancybox-button--right {
+	position: fixed;
+	top: 50%;
+	width: 26px;
+	height: 26px;
+	&:after {
+		width: 26px;
+		height: 26px;
+		border: 0;
+		top: 0;
+		left: 0;
+		transform: rotate(0deg);
+	}
+    }
+    .fancybox-button--left {
+	right: 50%;
+	left: auto;
+	margin-right: 400px;
+	
+	&:after {
+		background-image:  url(images/arrow_left.png);
+	}
+    }
+    .fancybox-button--right {
+	left: 50%;
+	right: auto;
+	margin-left: 400px;
+	
+	&:after {
+		background-image:  url(images/arrow_right.png);	
+	}
+    }
 }
 
 

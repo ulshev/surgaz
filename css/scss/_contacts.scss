@@ -72,7 +72,7 @@
 	    float: left;
 	    width: 70px;
 	    font-weight: 900;
-	    
+	    @include transition(all);
 	}
 	
 	a {
